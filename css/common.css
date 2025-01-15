@@ -10,7 +10,7 @@
 }
 /* 모바일 aside 메뉴 */
 #aside {
-    background-color: #fff; display: flex; flex-flow: row wrap; 
+    background-color: #fff; display: none; flex-flow: row wrap; 
     width: 50%; position: fixed; top: 100px; left: 0; height: 100vh;
 }
 #aside .aside_close {position: absolute; right: 5%; top:1%; padding: 5px;}
