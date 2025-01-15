@@ -1,0 +1,78 @@
+/* header */
+#h_bg {
+    height:100px; width :100%; position: fixed; z-index: 900;
+    /*  background-color: rgba(255,255,255,0.8);  */
+    box-shadow: 0 3px 4px rgb(0,0,0,0.1);
+    transition: all 0.3s;
+}
+#h_bg header {
+    margin: 0 auto; width: 1400px; height:100px; display: flex; justify-content: space-between; align-items: center; 
+}
+/* 모바일 aside 메뉴 */
+#aside {
+    background-color: #fff; display: flex; flex-flow: row wrap; 
+    width: 50%; position: fixed; top: 100px; left: 0; height: 100vh;
+}
+#aside .aside_close {position: absolute; right: 5%; top:1%; padding: 5px;}
+#aside .a_gnb {margin: 30px 30px; }
+#aside .a_gnb > li {margin: 20px 0;}
+#aside .a_gnb > li > a {
+    font-weight: 600; letter-spacing: 0.06em; display: block; 
+    height:20px; line-height: 20px; margin-bottom: 15px;
+}
+#aside .a_gnb li .a_lnb {}
+#aside .a_gnb li .a_lnb li {}
+#aside .a_gnb li .a_lnb li a {
+    margin-bottom: 10px; letter-spacing: 0.06em;  
+    display: inline-block; font-size:0.938rem; color: #999;
+}
+#aside .a_gnb li .a_lnb li a:hover {color: #333;} /* 모바일 aside 메뉴 */
+
+#h_bg header .all_menu {width: 20px; height: 20px; display: flex; display: none;}
+#h_bg header h1 {}
+#h_bg header h1 a {}
+#h_bg header h1 a img {width: 161px; height: 50px;}
+#h_bg header #desktop_menu {}
+#h_bg header #desktop_menu .gnb {display: flex;}
+#h_bg header #desktop_menu .gnb > li {margin-right: 25px; position:relative;}
+#h_bg header #desktop_menu .gnb > li:last-child {margin-right: 0;}
+#h_bg header #desktop_menu .gnb > li > a {font-weight: 600; letter-spacing: 0.06em; display: block; height: 100px; line-height: 100px;}
+#h_bg header #desktop_menu .gnb > li > a:hover {color: #EF683D;}
+#h_bg header #desktop_menu .gnb > li >.lnb {
+    display: flex; flex-flow: column nowrap; display: none;
+    background-color: rgba(255,255,255,0.9); position:absolute; top:103px;
+    transform: translateX(-50%); left: 50%; z-index: 950; border-radius:0 0 15px 15px;
+}
+#h_bg header nav .gnb > li > .lnb li {width: 140px;}
+#h_bg header nav .gnb > li .lnb > li > a {font-size:0.95rem; display: block; padding:7px 0; width: 100%; text-align: center; margin-bottom: 10px;}
+#h_bg header nav .gnb > li .lnb > li > a:hover {color: #EF683D;}
+#h_bg header .h_right {}
+#h_bg header .h_right a {margin-right: 20px;}
+#h_bg header .h_right a img {width: 20px; height: 20px;}
+#h_bg header .h_right a:nth-child(2) {margin: 0;}
+
+/* footer */
+#f_bg {background-color: #EFEFEF; transition: all 0.5s;}
+#f_bg footer {width:1400px;  height: 350px; margin: 0 auto ; display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; padding: 16px 0;}
+#f_bg footer .f_left {}
+#f_bg footer .f_left .f_logo {}
+#f_bg footer .f_left .f_logo img {}
+#f_bg footer .f_left .menu {margin-top: 20px;}
+#f_bg footer .f_left .menu a {margin-right: 25px; font-size: 0.875rem;}
+#f_bg footer .f_left .menu a::after {
+    content: ''; display: inline-block; width: 1px; height: 15px; 
+    background-color: #bcbcbc; position: relative; left: 15px; top: 3px;
+}
+#f_bg footer .f_left .menu a:last-child::after {display: none;}
+#f_bg footer .f_left .menu a:last-child {margin-right: 0;}
+#f_bg footer .f_left .sns {margin: 30px 0;}
+#f_bg footer .f_left .sns a {margin-right: 15px;}
+#f_bg footer .f_left .sns a img {width: 24px; height: 24px;}
+#f_bg footer .f_left p {font-size: 0.875em; line-height: 1.3; letter-spacing: -0.02em;}
+#f_bg footer .f_left p.address {}
+#f_bg footer .f_left p.copy {}
+#f_bg footer .f_right {}
+#f_bg footer .f_right p {line-height: 1.3; letter-spacing: -0.02em;}
+#f_bg footer .f_right p:nth-child(1) {font-size: 1.250em; font-weight: 700;} /* 고객센터 */
+#f_bg footer .f_right p:nth-child(2) {font-size: 1.875em; font-weight: 700; margin: 18px 0;} /* 전화번호 */ 
+#f_bg footer .f_right p:nth-child(3) {font-size: 0.875em;} /* 영업시간 */

@@ -1,0 +1,19 @@
+@media screen and (max-width:1024px){
+
+    #h_bg header {width: calc(100% - 32px);}
+    #h_bg header h1 {position: relative; left: 20px;}
+    #h_bg header #desktop_menu {display: none;}
+    #h_bg header .all_menu {display: flex;}
+
+    #f_bg footer {width: calc(100% - 32px); margin: 0 auto; flex-flow: column wrap; align-items: flex-start; justify-content: space-around; height: 500px;}
+
+    #category,#item_wrap {width: calc(100% - 16px); }
+    #item_wrap .item_list {width: 32%; }
+}
+@media screen and (max-width:550px) {
+
+    #item_wrap .item_list {width: 48.5%; }
+    #item_wrap .item_list .item_txt h1 {font-size: 0.875rem;}
+    #item_wrap .item_list .item_txt .price {font-size: 1.0rem;}
+    #item_wrap .pagination {margin: 40px auto;}
+}

@@ -1,0 +1,37 @@
+@media screen and (max-width:1024px){
+
+    #h_bg header {width: calc(100% - 32px);}
+    #h_bg header h1 {position: relative; left: 20px;}
+    #h_bg header #desktop_menu {display: none;}
+    #h_bg header .all_menu {display: flex;}
+
+    #f_bg footer {width: calc(100% - 32px); margin: 0 auto; flex-flow: column wrap; align-items: flex-start; justify-content: space-around; height: 500px;}
+
+    main #order_wrap {width: calc(100% - 32px); gap: 20px;}
+    main #left {flex: 1;}
+    main #right {flex: 1;}
+
+    main .tab_title {width: calc(100% - 32px);}
+    main .tab_contents {width: calc(100% - 32px);}
+    
+}
+@media screen and (max-width:768px) {
+    main #order_wrap {
+        flex-flow: column wrap;
+    }
+    main #left {width: 100%; }
+    main #right {width: 100%; }
+    main #right .bottom {display: flex; flex-flow: column wrap; justify-content: center; margin-top: 40px;}
+    main #right .bottom button  {margin-top: 5px;}
+    main #right .bottom #order_btn{width: 100%; font-size: 1.0rem;}
+    main #right .bottom #cart_btn,
+    main #right .bottom #wish_btn {width: 100%; font-size: 1.0rem;}
+    main #right .top h1 {font-size: 1.125rem ; margin-top: 10px;}
+    main #right .top dl.num dt,
+    main #right .top dl.num dd {padding: 10px 0; }
+    main #right .top dl.num dd.d_price {font-size: 1.125rem ;}
+    main .tab_title {width: calc(100% - 32px); margin-bottom: 40px; }
+    main .tab_contents .tab_c img {
+        width: 90%;
+    }
+}

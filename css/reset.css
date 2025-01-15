@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+/* font-family: 'Noto Serif KR', serif; */
+/* font-family: 'Raleway', sans-serif; */
+* {
+    box-sizing:border-box; 
+    font-family:'Noto Sans KR','Font Awesome 5 Free','Font Awesome 5 Brands' ,sans-serif;
+}
+
+html, body, h1,h2,h3,h4,h5,h6, ul,ol,li, a, img, p, div,
+header, nav, main, article, aside, section, footer, address,
+table,tr,td,th, del,span,em,strong,sup,sub, dl,dt,dd
+form, fieldset, legend, input, label, select, option, button {
+    margin:0; padding:0; color: #333;
+    font-weight:normal; font-style:normal;
+    font-size:1.0rem; line-height:1.0; letter-spacing:0em;
+}
+table, tr, td, th {border-collapse:collapse;}
+ul, ol, li {list-style:none;}
+a {text-decoration:none;}
+button {cursor:pointer; border:0; background:none;}
+textarea {resize:none; border:0;}
+fieldset {border:0;}
+.skip {display:none;}

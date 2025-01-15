@@ -1,0 +1,175 @@
+body {overflow-x: hidden;} /* 너비 줄일때 중간에 가로스크롤이 안생기게 함 */ 
+/* main */
+/* 컬렉션, 스타일링 공통 제목 */
+main>div>h1 {font-size: 2.375em; margin-bottom: 9px; font-family: 'Raleway', sans-serif;}
+main>div>p {color: #999;} 
+
+main {}
+main #slide_wrap {}
+main #slide_wrap .slide_container {height: 100vh; position: relative;}
+main #slide_wrap .slide_container .slide {
+    background-size: cover; background-position: center;
+    height: 100%; width: 100%; position: absolute;
+    opacity: 0; transition: all 0.5s;
+}
+/* 메인 베너 개별슬라이드 이미지 */
+main #slide_wrap .slide_container .slide1 {
+    background-image: url(../images/main_bnr4.jpg);
+    opacity: 1;
+}
+main #slide_wrap .slide_container .slide2 {
+    background-image: url(../images/main_bnr5.jpg);
+}
+main #slide_wrap .slide_container .slide3 {
+    background-image: url(../images/main_bnr3.jpg);
+}
+/* best/trend 앞뒤 버튼 공통 */
+.title_btn {
+    width: 350px;
+    display: flex; flex-flow: column wrap; align-items: center; justify-content: center;
+}
+.title_btn h1 {
+    font-size: 2.375em; margin-bottom: 9px; font-family: 'Raleway', sans-serif;
+}
+.title_btn p.sub_title {margin: 10px 0 50px; color: #999;}
+.title_btn .next_previous_btn {}
+.title_btn .next_previous_btn span:first-child {margin-right: 60px;}
+.title_btn .next_previous_btn span {cursor:pointer; }
+.title_btn .next_previous_btn span img {display: inline-block; width: 80px; height: 80px; transition: all 0.5s;}
+.title_btn .next_previous_btn span img:hover {transform: scale(1.12);}
+
+/* best wrap */
+main #best_product_wrap {padding:100px 0; display: flex; flex-flow: row; overflow: hidden; transition: all 0.5s; }
+main #best_product_wrap .title_btn {}
+main #best_product_wrap .title_btn h1 {}
+main #best_product_wrap .title_btn p.sub_title {}
+main #best_product_wrap .title_btn .next_previous_btn {}
+main #best_product_wrap .title_btn .next_previous_btn span:first-child {}
+main #best_product_wrap .title_btn .next_previous_btn span {}
+main #best_product_wrap .title_btn .next_previous_btn span img {}
+main #best_product_wrap .title_btn .next_previous_btn span img:hover {}
+main #best_product_wrap .p_slide_wrap {width: calc(100% - 350px); overflow: hidden;}
+main #best_product_wrap .p_slide_wrap .p_slide_container {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; 
+    width: max-content; transition:all 0.5s; 
+}
+main #best_product_wrap .p_slide_wrap .p_slide_container .p_slide {
+    width: 336px; margin-right: 53px;
+}
+main #best_product_wrap .p_slide_wrap .p_slide_container .p_slide a {display: inline-block; width: 100%;  height: 380px; /* overflow: hidden;  */margin-bottom: 20px;}
+main #best_product_wrap .p_slide_wrap .p_slide_container .p_slide a img {
+    display: inline-block; width: 100%; height: 100%; transition: all 0.5s;
+    object-fit: cover;
+}
+main #best_product_wrap .p_slide_wrap .p_slide_container .p_slide a:hover img {border-radius: 10%;}
+main #best_product_wrap .p_slide_wrap .p_slide_container .p_slide h2 {margin-bottom: 10px; letter-spacing: -0.02em;}
+main #best_product_wrap .p_slide_wrap .p_slide_container .p_slide p.price {font-size: 1.250em; font-weight: 700; letter-spacing:-0.02em;}
+
+/* trend product wrap */
+main #trend_product_wrap {padding:100px 0; display: flex; flex-flow: row; overflow: hidden; transition: all 0.5s;}
+main #trend_product_wrap .title_btn {
+    width: 350px;
+    display: flex; flex-flow: column wrap; align-items: center; justify-content: center;
+}
+main #trend_product_wrap .title_btn h1 {font-size: 2.375em; margin-bottom: 9px; font-family: 'Raleway', sans-serif;}
+main #trend_product_wrap .title_btn .sub_title {margin: 10px 0 50px; color: #999;}
+main #trend_product_wrap .title_btn .next_previous_btn {}
+main #trend_product_wrap .title_btn .next_previous_btn span:first-child {margin-right: 60px;}
+main #trend_product_wrap .title_btn .next_previous_btn span {cursor:pointer;}
+main #trend_product_wrap .title_btn .next_previous_btn span img {display: inline-block; width: 82px; height: 82px;}
+main #trend_product_wrap .t_slide_wrap {width: calc(100% - 350px);  overflow: hidden;}
+main #trend_product_wrap .t_slide_wrap .t_slide_container {display: flex; flex-flow: row nowrap; justify-content: space-between; transition: all 0.5s; width: max-content; }
+main #trend_product_wrap .t_slide_wrap .t_slide_container {display: flex; flex-flow: row nowrap; justify-content: space-between; width: max-content; }
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide {width: 336px; margin-right: 53px;}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide a {display: inline-block; width: 100%;  height: 380px; margin-bottom: 20px;}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide a img {
+    display: inline-block; width: 100%; height: 100%; transition: all 0.5s;
+    object-fit: cover;
+}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide a:hover img {border-radius: 10%;}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide h2 {margin-bottom: 10px; letter-spacing: -0.02em;}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide p.price {font-size: 1.250em; font-weight: 700; letter-spacing:-0.02em;}
+
+/* collection_wrap */
+main #collection_wrap {width: 1400px; margin: 0 auto; text-align: center; padding: 100px 0; transition: all 0.5s;}
+main #collection_wrap h1 {}
+main #collection_wrap p.sub_title {margin-bottom: 60px;}
+main #collection_wrap .collection_list {
+    width: 1400px; display: flex; flex-flow: row nowrap;
+}
+main #collection_wrap .collection_list .c_list {
+width: 33.333%; height: 620px; position: relative; transition: all 0.5s;
+}
+main #collection_wrap .collection_list .c_list:hover {width: 65%;}
+main #collection_wrap .collection_list .c_list a.active {
+    display: flex; 
+    background-color:rgba(182, 182, 182, 0.5); opacity: 0;
+    position: absolute; width: 100%; height: 620px; 
+    align-items: center; justify-content: center; transition: all 0.5s;
+}
+main #collection_wrap .collection_list .c_list a.active:hover {opacity: 1;}
+main #collection_wrap .collection_list .c_list a.active .a_txt {
+    display: flex; flex-flow: column wrap;
+}
+main #collection_wrap .collection_list .c_list a.active .a_txt span {color: #353535;}
+main #collection_wrap .collection_list .c_list a.active .a_txt span:nth-child(1) {font-size: 0.875em;} /* 소제목 */
+main #collection_wrap .collection_list .c_list a.active .a_txt span:nth-child(2) {
+    font-size: 2.500em; font-weight: 700; margin: 10px 0 50px 0;
+} /* 제목 */
+main #collection_wrap .collection_list .c_list a.active .a_txt span:nth-child(3) {
+    font-size: 1.250em; line-height: 1.3;
+} /* 설명 */
+main #collection_wrap .collection_list .c_list_1 {background-image: url(../images/coll_table.jpg); background-size: auto 120%; background-position: center;}
+main #collection_wrap .collection_list .c_list_2 {background-image: url(../images/coll_bed.jpg); background-size: auto 120%; background-position: center;}
+main #collection_wrap .collection_list .c_list_3 {background-image: url(../images/coll_sofa.jpg); background-size: auto 120%; background-position: center;}
+/* styling */
+main #styling_wrap {padding: 180px 0; text-align: center;
+background-image: url(../images/styling2.jpg); background-size: cover; 
+background-repeat:no-repeat; background-attachment: fixed; background-position: center;}
+main #styling_wrap h1 {}
+main #styling_wrap p {font-size: 1.125em; margin: 20px 0 69px; line-height: 1.5; letter-spacing: -0.02em; color: #343434; }
+main #styling_wrap a {padding: 12px 54px;  border: 1px solid; transition: all 1s}
+main #styling_wrap a:hover {background-color: #333; color: #fff; border: 0;}
+/* trend product wrap -> best wrap 아래에 작성 */
+/* main #trend_product_wrap {}
+main #trend_product_wrap .title_btn {}
+main #trend_product_wrap .title_btn h1 {}
+main #trend_product_wrap .title_btn span.sub_title {}
+main #trend_product_wrap .title_btn .next_previous_btn {}
+main #trend_product_wrap .title_btn .next_previous_btn span {}
+main #trend_product_wrap .title_btn .next_previous_btn span img {}
+main #trend_product_wrap .t_slide_wrap .t_slide_container {}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide{}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide a {}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide a img {}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide h2 {}
+main #trend_product_wrap .t_slide_wrap .t_slide_container .t_slide p.price {} */
+
+/* collaboration wrap */
+main #collaboration_wrap { width: 1400px; margin: 0 auto; padding: 100px 0; transition: all 0.5s;}
+main #collaboration_wrap #c_contents {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+main #collaboration_wrap #c_contents .c_left {width: 33.333%;}
+main #collaboration_wrap #c_contents .c_left>div,main #collaboration_wrap #c_contents .c_right>div {filter: grayscale(75%); transition: all 0.3s;}
+main #collaboration_wrap #c_contents .c_left>div:hover {filter: grayscale(0%);}
+main #collaboration_wrap #c_contents .c_right>div:hover {filter: grayscale(0%);}
+main #collaboration_wrap #c_contents .c_left .c_l_t {height: 310px; 
+    background-image: url(../images/brand_coll_01.jpg); background-position: center top;}
+main #collaboration_wrap #c_contents .c_left .c_l_btm {height: 310px; 
+    background-image: url(../images/brand_coll_02.jpg); }
+main #collaboration_wrap #c_contents .c_center {
+    width: 33.333%; display: flex; align-items: center;
+    justify-content: center; 
+    background: linear-gradient(rgb(254, 172, 94,0.8), rgb(199, 121, 208,0.8), rgb(75, 192, 200,0.8));
+}
+main #collaboration_wrap #c_contents .c_center .center_txt {text-align: center;}
+main #collaboration_wrap #c_contents .c_center .center_txt h1 {font-family: 'Raleway', sans-serif; font-size: 2.375em;}
+main #collaboration_wrap #c_contents .c_center .center_txt p {margin: 10px 0 54px;}
+main #collaboration_wrap #c_contents .c_center .center_txt a {padding: 12px 40px; border: 1px solid; display: inline-block; transition: all 1s;}
+main #collaboration_wrap #c_contents .c_center .center_txt a:hover {background-color: #333; color: #fff; border: 1px solid #333;}
+main #collaboration_wrap #c_contents .c_right {width: 33.333%; }
+main #collaboration_wrap #c_contents .c_right .c_r_t {height: 310px; 
+    background-image: url(../images/brand_coll_03.jpg);}
+main #collaboration_wrap #c_contents .c_right .c_r_btm {height: 310px; background-image: url(../images/brand_coll_04.jpg);}
+main #collaboration_wrap #c_contents .c_img {background-size: cover; background-position: center;}
+
+
